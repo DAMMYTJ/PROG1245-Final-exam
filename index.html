@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOMSDAY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            color: white;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #2c4427;
+            padding: 15px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        /* Hero section */
+        .hero {
+            background-color: #2c4427;
+            display: flex;
+            padding: 30px 10%;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 50%;
+            padding-right: 20px;
+        }
+        
+        .hero-img {
+            position: absolute;
+            right: 10%;
+            bottom: 0;
+            max-width: 35%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .hero-img img {
+            max-height: 95%;
+            max-width: 100%;
+        }
+        
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        .tagline {
+            font-size: 13px;
+            margin-bottom: 15px;
+            color: #eee;
+        }
+        
+        .cta-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #333;
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        
+        .arrow-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+        }
+        
+        /* Features intro */
+        .features-intro {
+            text-align: center;
+            padding: 40px 0;
+            background-color: white;
+            color: #333;
+        }
+        
+        .features-intro h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .features-intro p {
+            font-size: 20px;
+        }
+        
+        /* Game features section */
+        .game-features {
+            background-color: #271a00;
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+        }
+        
+        .zombie-character {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            height: 450px;
+        }
+        
+        /* Card styles */
+        .card {
+            position: absolute;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            padding: 10px;
+        }
+        
+        .caption h3 {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        
+        .caption p {
+            font-size: 12px;
+            color: #ddd;
+        }
+        
+        /* Card positions exactly matching screenshot */
+        .card-top-left {
+            width: 200px;
+            height: 120px;
+            top: 70px;
+            left: 270px;
+            transform: rotate(-5deg);
+        }
+        
+        .card-center {
+            width: 200px;
+            height: 350px;
+            top: 70px;
+            left: 520px;
+        }
+        
+        .card-top-right {
+            width: 200px;
+            height: 120px;
+            top: 70px;
+            left: 770px;
+            transform: rotate(5deg);
+        }
+        
+        .card-bottom-left {
+            width: 200px;
+            height: 160px;
+            top: 250px;
+            left: 270px;
+            transform: rotate(-5deg);
+        }
+        
+        .card-bottom-right {
+            width: 200px;
+            height: 120px;
+            top: 450px;
+            left: 770px;
+            transform: rotate(5deg);
+        }
+        
+        /* Platforms section */
+        .platforms {
+            text-align: center;
+            padding: 50px 0;
+            background-color: white;
+            color: #333;
+        }
+        
+        .platforms h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        
+        .platform-icons {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+        
+        .platform-icon {
+            width: 50px;
+            height: 50px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #111;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/image 3.png" alt="Zombie icon">
+            DOOMSDAY
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Meet the Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="tagline">Fire, Hide or Stand your ground and FIGHT!!</p>
+            <h1>Achieve true freedom in the world of doomsday.</h1>
+            <p>Get your equipment for a world of unforgiving undead where every bullet counts and survival is a brutal luxury. Arm yourself wisely, for in this zombie apocalypse, your gun is the only difference between predator and prey.</p>
+            <div class="cta-container">
+                <a href="#" class="cta-button">GET</a>
+                <div class="arrow-circle">→</div>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="images/image 2.png" alt="Zombie character">
+        </div>
+    </section>
+    
+    <!-- Features introduction -->
+    <section class="features-intro">
+        <h2>Glimpse into a world overrun...</h2>
+        <p>Can you survive what awaits?</p>
+    </section>
+    
+    <!-- Game features section with zombie and cards -->
+    <section class="game-features">
+        <!-- Zombie character on left -->
+        <img src="images/Screenshot_2025-04-10_120832-removebg-preview.png" alt="Zombie" class="zombie-character">
+        
+        <!-- Top row cards -->
+        <div class="card card-top-left">
+            <img src="images/image-3.png" alt="Gear">
+            <div class="caption">
+                <h3>Powerful Gear</h3>
+                <p>Combine found items to create weapons and tools</p>
+            </div>
+        </div>
+        
+        <div class="card card-center">
+            <img src="images/image-5.png" alt="Zombie">
+            <div class="caption">
+                <h3>Fight Hordes of the Undead</h3>
+                <p>Face relentless waves of zombies</p>
+            </div>
+        </div>
+        
+        <div class="card card-top-right">
+            <img src="images/image-6.png" alt="Weapons">
+            <div class="caption">
+                <h3>Diverse Weaponry</h3>
+                <p>From melee to firearms, choose your arsenal</p>
+            </div>
+        </div>
+        
+        <!-- Bottom row cards -->
+        <div class="card card-bottom-left">
+            <img src="images/image-4.png" alt="Combat">
+            <div class="caption">
+                <h3>Engaging Combat</h3>
+                <p>Master the art of zombie elimination</p>
+            </div>
+        </div>
+        
+        <div class="card card-bottom-right">
+            <img src="images/image-8.png" alt="Environment">
+            <div class="caption">
+                <h3>Dynamic Environments</h3>
+                <p>Explore diverse and immersive locations</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Platforms section -->
+    <section class="platforms">
+        <h2>AVAILABLE ON</h2>
+        <div class="platform-icons">
+            <img src="images/steam.png" alt="Steam" class="platform-icon">
+            <img src="images/playstation.png" alt="PlayStation" class="platform-icon">
+            <img src="images/xbox.png" alt="Xbox" class="platform-icon">
+            <img src="images/switch.png" alt="Nintendo Switch" class="platform-icon">
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>©2025 Group 8 All rights reserved.</p>
+    </footer>
+</body>
+</html>
