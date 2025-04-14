@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Delicious Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Lakeside Kitchen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <h2>Featured Dishes</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card food-card">
+                    <img src="images/burger.jpg" class="card-img-top" alt="Delicious Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Burger</h5>
+                        <p class="card-text">Juicy beef patty with all the fixings.</p>
+                        <p class="card-text price">$9.99</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card food-card">
+                    <img src="images/pasta.jpg" class="card-img-top" alt="Delicious Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta Carbonara</h5>
+                        <p class="card-text">Creamy pasta with eggs, cheese, and bacon.</p>
+                        <p class="card-text price">$12.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card food-card">
+                    <img src="images/salad.jpg" class="card-img-top" alt="Delicious Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fresh Salad</h5>
+                        <p class="card-text">A healthy mix of greens and seasonal vegetables.</p>
+                        <p class="card-text price">$7.75</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card food-card">
+                    <img src="images/pizza.jpg" class="card-img-top" alt="Delicious Dish 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Margherita</h5>
+                        <p class="card-text">Classic pizza with tomato, mozzarella, and basil.</p>
+                        <p class="card-text price">$11.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card food-card">
+                    <img src="images/stirfry.jpg" class="card-img-top" alt="Delicious Dish 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Stir-Fry</h5>
+                        <p class="card-text">Savory stir-fried chicken with mixed vegetables.</p>
+                        <p class="card-text price">$10.50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card food-card">
+                    <img src="images/cake.jpg" class="card-img-top" alt="Delicious Dish 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Cake</h5>
+                        <p class="card-text">Rich and decadent chocolate cake slice.</p>
+                        <p class="card-text price">$5.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">Our Menu</h2>
+        <ul class="nav nav-tabs mt-3" id="menuTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast" type="button" role="tab" aria-controls="breakfast" aria-selected="true">Breakfast</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch" type="button" role="tab" aria-controls="lunch" aria-selected="false">Lunch</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="dinner-tab" data-bs-toggle="tab" data-bs-target="#dinner" type="button" role="tab" aria-controls="dinner" aria-selected="false">Dinner</button>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3" id="menuTabsContent">
+            <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pancakes</td>
+                            <td>Fluffy pancakes with syrup and butter.</td>
+                            <td>$6.50</td>
+                        </tr>
+                        <tr>
+                            <td>Omelette</td>
+                            <td>Three-egg omelette with your choice of fillings.</td>
+                            <td>$7.99</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="lunch-tab">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sandwich</td>
+                            <td>Your choice of meat and fillings on fresh bread.</td>
+                            <td>$8.25</td>
+                        </tr>
+                        <tr>
+                            <td>Soup of the Day</td>
+                            <td>A warm and comforting soup, changes daily.</td>
+                            <td>$5.50</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="dinner" role="tabpanel" aria-labelledby="dinner-tab">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Steak</td>
+                            <td>Grilled steak served with your choice of sides.</td>
+                            <td>$19.99</td>
+                        </tr>
+                        <tr>
+                            <td>Pasta Marinara</td>
+                            <td>Pasta with a rich tomato and herb sauce.</td>
+                            <td>$11.75</td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 The Lakeside Kitchen</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Simple Eatery</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -22,13 +22,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="products.html">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
@@ -38,36 +38,39 @@
             </div>
         </nav>
     </header>
-    <main>
-        <div class="hero">
-            <div class="hero-image"></div>
-            <div class="hero-text">
-                <h1>Welcome to Lakeside Kitchen</h1>
-                <p>Fresh, delicious food made with love.</p>
-                <a href="products.html" class="button">View Our Menu</a>
-            </div>
+    <main class="about-section mt-5">
+        <h1>Our Team</h1>
+        <div class="team-grid">
+            <figure class="person">
+                <img src="images/headchef.png" alt="Head Chef">
+                <figcaption>
+                    <h3>Steve Jonas</h3>
+                    <p>Head Chef</p>
+                </figcaption>
+            </figure>
+            <figure class="person">
+                <img src="images/assistant chef.png" alt="Team Member 2">
+                <figcaption>
+                    <h3>Robert Randall</h3>
+                    <p>Assistant Chef</p>
+                </figcaption>
+            </figure>
+            <figure class="person">
+                <img src="images/sous chef.png" alt="Team Member 3">
+                <figcaption>
+                    <h3>Martin Wanganga</h3>
+                    <p>Sous Chef</p>
+                </figcaption>
+            </figure>
+            <figure class="person">
+                <img src="images/saladchef.png" alt="Team Member 4">
+                <figcaption>
+                    <h3>Alice Brown</h3>
+                    <p>Salad Chef</p>
+                </figcaption>
+            </figure>
         </div>
-        <section class="video-section mt-5"> <h2>A Taste of Our Kitchen</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/53nwh1aHCU8?si=X1uW33KQpklJzsTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section class="featured-items-css mt-5">
-            <div class="container">
-                <h2>Our Specialties</h2>
-                <div class="image-grid">
-                    <div class="clip-image-container shape-circle">
-                        <img src="images/icecream.jpg" alt="Special Dish 1">
-                    </div>
-                    <div class="clip-image-container shape-hexagon">
-                        <img src="images/pancake.jpg" alt="Special Dish 2">
-                    </div>
-                    <div class="clip-image-container shape-diagonal">
-                        <img src="images/fiesta.jpg" alt="Special Dish 3">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <p class="company-info">Welcome to Lakeside Kitchen! We are a family-owned restaurant passionate about serving fresh, delicious food in a welcoming atmosphere. Our team is dedicated to providing you with a memorable dining experience.</p>
     </main>
     <footer class="bg-dark text-light py-3 mt-5">
         <p class="text-center mb-0">© 2025 The Lakeside Kitchen</p>
